@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Nav from './component/Nav';
-import Home  from './component/Home';
-import About from './component/About';
-import Shop  from './component/Shop';
+import Nav from './components/Nav';
+import Home  from './components/Home';
+import About from './components/About';
+import Shop  from './components/Shop';
 
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ function App() {
      <Router>
       <div className ="App">
         <Nav/>
-        <Route exact path ="/" component = {Home} />
+        <Route exact path ="/home" component = {Home} />
         <Route path ="/about" component = {About} />
         <Route path ="/shop" component = {Shop} />
       </div>
